@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body >
+    <nav class="navbar navbar-expand-lg  bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <img src="imagenes/logo.jpg" alt="logo brand"> Nike</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.instagram.com/nike/">Instagram</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Aplicaciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.nike.com/es/ntc-app">NTC</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.nike.com/es/nrc-app">NRC</a></li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.nike.com/us/es/">Shoes</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid">
+        <img src="imagenes/Portada.jpg" alt="Portada">
+        <h1>Nike te potencia</h1>
+        <h2>Elegí ser tu mejor versión</h2> 
+    </header> 
+
+    <main class="container-md">
+        <section class="row justify-content-center">
+
+            <div class="col-12 col-md-6 col-lg-4">
+            <h3>Training Club</h3>
+            <p>Rutinas de entrenamiento para transformar tu fuerza y fortalecer tus músculos.</p>
+            </div>
+       
+            <div class="col-12 col-md-6 col-lg-4">
+            <h3>Running Club</h3>
+            <p>Prácticas grupales al aire libre para mejorar tu ritmo y seguir sumando kilómetros. </p>
+            </div>
+        
+            <div class="col-12 col-md-6 col-lg-4">
+            <h3>Nike Shoes</h3>
+            <p>Zapatillas con variedad de modelos que se ajustan a tus actividades y estilo personal.</p>
+            </div>
+       
+        </section>
+ 
+        <h4>Descargá nuestras aplicaciones</h4> 
+        <p>Medí tu progreso, establecé tus objetivos y superá tus límites.</p>
+        <p>Sumá a tus amigos para mayor motivación! </p>
+
+        <div> 
+        <img src="imagenes/Training club.jpg" alt="Training">
+        <img src="imagenes/Zapatillas.jpg" alt="Zapatillas">
+        </div>
+
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#miModal">
+            Suscribite al Newsletter
+        </button>
+
+        <div class="modal fade" id="miModal" tabindex="-1">
+            <div class="modal-dialog modal-md modal-sm-lg-down">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="needs-validation" novalidate action="code.php" method="post">
+            
+                            <div>
+                                <label for="name" class="form-label text-dark">Name</label>
+                                <input required class="form-control form-control-sm" type="text" name="name" id="name">
+                                <div class="invalid-feedback">Nombre incompleto!</div>
+                            </div> 
+
+                            <div>
+                                <label for="email" class="form-label text-dark">Email</label>
+                                <input required type="email" name="email" id="email" class="form-control form-control-sm">
+                                <div class="invalid-feedback">Email no es válido!</div>
+                            </div>
+            
+                            <button class="btn btn-dark">Suscribirse</button>
+            
+                        </form> 
+                    </div> 
+            
+                    <div class="modal-footer">
+                        <p data-bs-dismiss="modal">Close the modal</p>
+                    </div> 
+            
+                </div> 
+            </div>
+        </div> 
+            
+            <script src="js/code.js"></script>
+
+    </main>
+    
+    <footer class="container-fluid"> 
+        <p class="blockquote>"> </p>
+
+        <p class="blockquote-footer"></p>
+    </footer>
+
+</body>
+</html>
+
+
+
